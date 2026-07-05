@@ -40,5 +40,12 @@ public class HelloController {
     public String saludar6(){
         return "Hola Mundo con REST en Spring Boot";
     }
+
+    // Test Webhook ngrok - jenkins:
+    @GetMapping("/hello7")
+    public String saludar6(){
+        return "Hola Mundo con REST en Spring Boot";
+    }
+
 }
 
