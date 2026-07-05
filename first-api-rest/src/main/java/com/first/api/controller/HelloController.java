@@ -47,5 +47,11 @@ public class HelloController {
         return "Hola Mundo con REST en Spring Boot";
     }
 
+    // Test Jenkins -  webhook
+    @GetMapping("/hello8")
+    public String saludar6(){
+        return "Hola Mundo con REST en Spring Boot";
+    }
+
 }
 
