@@ -1,6 +1,5 @@
 package com.first.api;
 
-
 import com.first.api.controller.ProductoController;
 import com.first.api.model.Producto;
 import com.first.api.service.ProductoService;
@@ -20,12 +19,11 @@ import static org.mockito.Mockito.*;
 
 //Suscribete a La Tecnologia Avanza
 public class ProductoControllerTest {
-
-    //New Comment 1
+    // mock controller
     @InjectMocks
     private ProductoController productoController;
 
-    //New Comment 2
+    // Mock service
     @Mock
     private ProductoService productoService;
 
