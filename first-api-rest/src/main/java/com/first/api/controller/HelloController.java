@@ -36,24 +36,24 @@ public class HelloController {
 
     // Test Jenkins - webhook - pipeline
     @GetMapping("/hello5")
-    public String saludar4(){
+    public String saludar5(){
         return "Hola Mundo con REST en Spring Boot";
     }
 
     // Test Webhook ngrok - jenkins:
     @GetMapping("/hello7")
-    public String saludar5(){
+    public String saludar7(){
         return "Hola Mundo con REST en Spring Boot";
     }
 
     // Test Jenkins -  webhook
     @GetMapping("/hello8")
-    public String saludar6(){
+    public String saludar8(){
         return "Hola Mundo con REST en Spring Boot";
     }
 
     @GetMapping("/hello9")
-    public String saludar7(){
+    public String saludar9(){
         return "Hola Mundo con REST en Spring Boot";
     }
 
