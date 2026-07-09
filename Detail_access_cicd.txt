@@ -1,3 +1,21 @@
 DATOS JENKINS:
 user: aradmin
 password: 12345678
+
+
+jenkins: 
+ # token: 25356b54137b4f07a09ca9351524062f
+
+NGrok credential token: 
+ # C:\Users\Alexander\AppData\Local\ngrok\ngrok.yml
+
+
+
+Pasos generales configuracion:
+1. Nueva tarea en jenkins -> Name, vinculacion repositorio git, rama
+2. NGrok -> login, config authtoken en local cmd para mantener sesión del tunnel
+   # para levantar tunnel: ngrok http puerto:puerto -> dentro de la carpeta en local.
+
+3. en repositorio GitHub vincular este tunnel para la conexión de notificaciones. -> WebHook con terminacion: github-webhook/ 
+4. verificacion WebHook en github -> webhook la que se creó, en seccion Recent Delivieres, historial de notificaciones
+5. 
