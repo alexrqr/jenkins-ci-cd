@@ -18,4 +18,16 @@ Pasos generales configuracion:
 
 3. en repositorio GitHub vincular este tunnel para la conexión de notificaciones. -> WebHook con terminacion: github-webhook/ 
 4. verificacion WebHook en github -> webhook la que se creó, en seccion Recent Delivieres, historial de notificaciones
-5. 
+5.
+
+# Instalacion y configuracion SonarQube
+1. docker pull sonarqube
+2. docker run -d --name sonarqube -p 9000:9000 -p 9092 sonarqube
+    ### user: admin | password: admin => DEFAULT new password: @admin12345678O
+    ### administrador token: squ_4cdc64d8650eb2a2904fd031a60e1d7e32b88663
+    ## en jenkins del pipeline sonarqube debe ejcutarse antes de los comandos de git y antes de maven superior..
+## Networks para sonarqube y jenkins:
+docker network create jenkins_sonarqube
+1. docker network connect jenkins_sonarqube sonarqube
+2. docker network connect jenkins_sonarqube jenkins
+
